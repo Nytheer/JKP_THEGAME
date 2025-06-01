@@ -1,15 +1,14 @@
 ## Documentação do game!!
 Como funciona o cod do jogo "JKP" no PYTHON??
 
-PARTE 1) importar bibliotecas:
+1) importar bibliotecas:
 import random
 import time
 random(sistema de escolha) 
 time(para ter uma interação divertida com o jogador)
 
 2) primeira função:
-serve para armazenar ASCII desenhos com caracteres
-e definir se vão ser utilizados ou não.
+Serve para armazenar ASCII (desenhos com caracteres) e definir se vão ser utilizados.
 
 se forem:
 def mao_opcao(opcao):
@@ -30,10 +29,6 @@ if opcao == 'TESOURA': (se opcão igual TESOURA)
 TESOURA!!
 ("MÃO ASCII TESOURA") {retorne}
 '''
-
-se não:
-    elif opcao != 'PEDRA' != 'PAPEL' != 'TESOURA':
-        return "opção invalida (ᵕ•᷄_•᷅ )" 
 
 != serve para comparação, 
 só será 'true' se os itens forem diferentes.
