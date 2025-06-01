@@ -1,4 +1,4 @@
-## Falta colocar algumas coisas hehe
+## Documentação do game!!
 Como funciona o cod do jogo "JKP" no PYTHON??
 
 PARTE 1) importar bibliotecas:
@@ -6,7 +6,6 @@ import random
 import time
 random(sistema de escolha) 
 time(para ter uma interação divertida com o jogador)
-
 
 2) primeira função:
 serve para armazenar ASCII desenhos com caracteres
