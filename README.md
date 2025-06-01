@@ -1,60 +1,57 @@
 ## Documentação do game!!
 Como funciona o cod do jogo "JKP" no PYTHON??
 
-1) importar bibliotecas:
-import random
-import time
-random(sistema de escolha) 
-time(para ter uma interação divertida com o jogador)
+JKP_THEGAME: Guia do Jogador e Documentação do Código
+Um simples e divertido jogo de Pedra, Papel e Tesoura feito em Python!
 
-2) primeira função:
-Serve para armazenar ASCII (desenhos com caracteres) e definir se vão ser utilizados.
+🕹 Como Jogar 🕹
 
-se forem:
-def mao_opcao(opcao):
-if opcao == 'PEDRA': (se opcão igual PEDRA)
-	return '''
-PEDRA!!
-("MÃO ASCII PEDRA") {retorne}
-'''
+1. Quando o jogo iniciar, ele vai perguntar:
 
-if opcao == 'PAPEL': (se opcão igual PAPEL)
-	return ''' 
-PAPEL!!
-("MÃO ASCII PAPEL") {retorne}
-'''
+   ✧₊⁺Que tal um JoKenPô??⁺₊✧  
+   ⋆.˚✮ PEDRA, PAPEL ou TESOURA!! ✮˚.⋆
 
-if opcao == 'TESOURA': (se opcão igual TESOURA)
-	return '''
-TESOURA!!
-("MÃO ASCII TESOURA") {retorne}
-'''
+2. Digite sua escolha (não se preocupe com letras maiúsculas/minúsculas).
 
-!= serve para comparação, 
-só será 'true' se os itens forem diferentes.
+3. O jogo vai exibir: JO... KEN... PÔ (o famoso suspense)!
 
+4. Em seguida, o jogo mostra:
 
-PARTE 2) def jogo_JKP(): {onde o jogo cria vida}
+   - Sua mão (em ASCII)
+   - A escolha do computador
+   - O resultado (Vitória, Derrota ou Empate)
 
-1) input 
-escolha_jogador = input('✧₊⁺Que tal um Jokenpô??⁺₊✧ 
-⋆.˚✮escolha PEDRA, PAPEL ou TESOURA!!✮˚.⋆\n').upper()
+5. Depois, você decide se quer jogar de novo.
 
-\n serve para quebra de linha
-.upper() serve para manter o texto/spring maiusculo
+Algo bem simples, porém, divertido!!
 
-2) time
-time.sleep(0.5)
-serve para pausar a execução um codigo 
-a partir de um tempo determinado
-entre os --> () parenteses 
+🤓 Organização do Código 🤓
 
-3) lista boba
-opcao = ['PEDRA', 'PAPEL', 'TESOURA']
-serve para armazenar mais de um item 
-q nesse caso são springs/texts
+1. Bibliotecas Importadas:
+import random — sorteio do PC
+import time — pausas para suspense
 
-4) condicional
-if escolha_jogador != 'PEDRA' != 'PAPEL' != 'TESOURA':
-   print('essa opção não existe pilantra! 
-   (╭ರ_•́) tentando quebrar o código né??') 
+2. Função mao_opcao(opcao)
+Retorna os desenhos ASCII de PEDRA, PAPEL ou TESOURA.
+
+3. Função jogo_JKP()
+Executa o jogo:
+- Recebe escolha do jogador (input + .upper()+ .strip() +.lower())
+- Suspense com time.sleep 
+- Escolha aleatória do PC (random.choice)
+- Mostra os resultados com desenhos e mensagens divertidas
+
+4. Loop principal
+while True:
+    jogo_JKP()
+    Pergunta se quer jogar de novo (s ou n) (.strip()+.lower())
+    Se 'n', o jogo termina com uma despedida em ASCII Art
+    e Se for uma opção diferente de "n ou s" exibe:
+    "essa opção não existe! (ᵕ•᷄_•᷅ ) engraçadão"
+
+🎁 ASCII final 🎁
+    |\__/,|   (`\
+  _.|o o  |_   ) )
+-(((---(((--------
+Divirta-se!
+
