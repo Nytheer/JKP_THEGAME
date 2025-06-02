@@ -111,4 +111,3 @@ while True:
     else:
         print('''essa opção não existe! (ᵕ•᷄_•᷅ ) engraçadão
                ''')
-        continue
