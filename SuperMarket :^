@@ -1,0 +1,27 @@
+def receber_matriz_precos():
+    linhas = int(input("Digite o número de produtos: "))
+    colunas = int(input("Digite o número de locais (preços por produto): "))
+
+    matriz = []
+    for i in range(linhas):
+        linha = []
+        print(f"\nProduto {i+1}:")
+        for j in range(colunas):
+            preco = float(input(f"  Preço no local {j+1}: R$ "))
+            linha.append(preco)
+        matriz.append(linha)
+    return matriz
+
+def calcular_media_precos(matriz):
+    medias = []
+    print("\n--- Médias de Preços por Produto ---")
+    for i, linha in enumerate(matriz):
+        media = sum(linha) / len(linha)
+        medias.append(media)
+        print(f"Produto {i+1} - Média de preço: R$ {media:.2f}")
+    return medias
+
+# Programa principal
+print("Bem-vindo ao sistema de cálculo de preços - SuperMarket!")
+matriz_precos = receber_matriz_precos()
+medias = calcular_media_precos(matriz_precos)
