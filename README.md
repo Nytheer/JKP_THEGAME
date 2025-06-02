@@ -17,9 +17,9 @@ Um simples e divertido jogo de Pedra, Papel e Tesoura feito em Python!
 
 4. Em seguida, o jogo mostra:
 
-   - Sua mão (em ASCII)
-   - A escolha do computador
-   - O resultado (Vitória, Derrota ou Empate)
+   - Sua mão (em ASCII e texto)
+   - Escolha do computador (em ASCII e texto)
+   - Resultado (Vitória, Derrota ou Empate)
 
 5. Depois, você decide se quer jogar de novo.
 
@@ -39,14 +39,14 @@ Executa o jogo:
 - Recebe escolha do jogador (input + .upper()+ .strip() +.lower())
 - Suspense com time.sleep 
 - Escolha aleatória do PC (random.choice)
-- Mostra os resultados com desenhos e mensagens divertidas
+- Mostra os resultados com desenhos e mensagens brabas
 
 4. Loop principal
 while True:
     jogo_JKP()
     Pergunta se quer jogar de novo (s ou n) (.strip()+.lower())
     Se 'n', o jogo termina com uma despedida em ASCII Art
-    e Se for uma opção diferente de "n ou s" exibe:
+    Se for uma opção diferente de "n ou s" exibe:
     "essa opção não existe! (ᵕ•᷄_•᷅ ) engraçadão"
 
 🎁 ASCII final 🎁
