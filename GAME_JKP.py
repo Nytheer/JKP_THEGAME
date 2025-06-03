@@ -42,7 +42,8 @@ TESOURA!!
       (____)
 ---.__(___)
 '''
-
+    elif opcao != 'PEDRA' != 'PAPEL' != 'TESOURA':
+        return "opção invalida (ᵕ•᷄_•᷅ )"
 # inicio de tudo ---------------------------------------------------------- 
 def jogo_JKP(): 
     print('₊‧.°.⋆✮⋆.°.‧₊ ⛧°。 ⋆༺✮༻⋆。 °⛧ ₊‧.°.⋆✮⋆.°.‧₊')
