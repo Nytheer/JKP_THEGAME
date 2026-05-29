@@ -50,8 +50,8 @@ while True:
     "essa opção não existe! (ᵕ•᷄_•᷅ ) engraçadão"
 
 🎁 ASCII final 🎁
-    |\__/,|   (`\
-  _.|o o  |_   ) )
--(((---(((--------
+       |\__/,|   (`\
+     _.|o o  |_   ) )
+   -(((---(((--------
 Divirta-se!
 
