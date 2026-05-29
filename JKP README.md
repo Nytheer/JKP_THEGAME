@@ -49,9 +49,4 @@ while True:
     Se for uma opção diferente de "n ou s" exibe:
     "essa opção não existe! (ᵕ•᷄_•᷅ ) engraçadão"
 
-🎁 ASCII final 🎁
-       |\__/,|   (`\
-     _.|o o  |_   ) )
-   -(((---(((--------
-Divirta-se!
-
+✨ Divirta-se! ✨
