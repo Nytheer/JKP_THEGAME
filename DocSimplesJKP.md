@@ -1,7 +1,7 @@
 ## Documentação do game!!
 Como funciona o cod do jogo "JKP" no PYTHON??
 
-JKP_THEGAME: Guia do Jogador e Documentação do Código
+JKP_THEGAME: Guia Bacana para Jogador e Documentação do Código 
 Um simples e divertido jogo de Pedra, Papel e Tesoura feito em Python!
 
 🕹 Como Jogar 🕹
