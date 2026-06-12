@@ -1,10 +1,8 @@
 # JKP_THEGAME
 #um simples jogo de pedra, papel e tesoura.
-
 # jokenpo/GAME_JKP.py
+
 # JOGO MARAVILHOSO :D ----------------------------------------
-# um jogo bastante interessante 
-# chamado JoKenPô :O (JKP pro mais íntimos)
 
 # BIBLIOTECAS ----------- 
 import random
@@ -13,18 +11,18 @@ import time
 # opções de mões draws ------------- 
 def mao_opcao(opcao):
     if opcao == 'PEDRA':
-        return '''
-PEDRA!!
+        return '''\r
+PEDRADA!!
     ______
 ---'  (____)
-      (_____)
-      (_____)
-      (____)
----.__(___)
+      (______)
+      (_______)
+      (______)
+---.__(_____)
 '''
     if opcao == 'PAPEL':
-        return '''
-PAPEL!!
+        return '''\r
+PAPELADA!!
     _______
 ---'   ____)____
           ______)
@@ -33,28 +31,30 @@ PAPEL!!
 ---.__________)
 '''
     if opcao == 'TESOURA':
-        return ''' 
-TESOURA!!
+        return '''\r 
+TESOURADA!!
     _______
 ---'   ____)____
           ______)
+          |______
        __________)
       (____)
 ---.__(___)
 '''
+
 # inicio de tudo ---------------------------------------------------------- 
 def jogo_JKP(): 
     print('₊‧.°.⋆✮⋆.°.‧₊ ⛧°。 ⋆༺✮༻⋆。 °⛧ ₊‧.°.⋆✮⋆.°.‧₊')
     print('''✧₊⁺Que tal um JoKenPô??⁺₊✧
-          ''')
-    escolha_jogador = input('⋆.˚✮ PEDRA, PAPEL ou TESOURA!! ✮˚.⋆\n').strip().lower().upper()
+          ''') 
+    escolha_jogador = input('⋆.˚✮ PEDRA, PAPEL ou TESOURA!! ✮˚.⋆\n').strip().upper()
     
     # time ------------------------------------------------    
     print("JO")
     time.sleep(0.5)
     print("KEN")
     time.sleep(0.5)
-    print("PÔ")
+    print("PÔ!!")
     time.sleep(0.5)
     
     # escolhas pc -------------------------------------------------    
@@ -63,7 +63,7 @@ def jogo_JKP():
     
     # Verificação de resposta ------------------------------------ 
     if escolha_jogador not in opcao:
-        print('''essa opção não existe pilantra! (╭ರ_•́)??''') 
+        print('''essa opção não existe pilantra! (╭ರ_•́)??''')    
         print('''aqui não é terra sem lei (ᴗ˳ᴗ)ᶻ𝗓𐰁''')
                 
     else:  
@@ -75,15 +75,15 @@ def jogo_JKP():
         
         # escolhas jogador ----------------------------------------- 
         if escolha_jogador == escolha_pc:
-            print("DEU EMPATEEE!! ✧｡٩(ˊᗜˋ )و✧*｡!! ")
+            print("DEU EMPATEEE!! ✧｡٩(ˊᗜ ˋ )و✧*｡!! ")
         elif (
             (escolha_jogador == 'PEDRA' and escolha_pc == 'TESOURA') or
             (escolha_jogador == 'PAPEL' and escolha_pc == 'PEDRA') or
             (escolha_jogador == 'TESOURA' and escolha_pc == 'PAPEL')
         ):
-            print("AEHH GANHASSE!! (˵ •̀ ᴗ - ˵ ) ✧!!")
+            print("AEHH GANHASSE!! (˵ •̀ ᴗ - ˵) ✧!!")
         else:
-            print("foi triste pra tu... kk (¬_¬')") 
+            print("Foi triste pra tu... kk (¬_¬')") 
             
 # Opção de continuar ou sair d JKP ------------------------------------ 
 while True:
@@ -97,10 +97,10 @@ while True:
               ''') 
         continue
     elif resposta == 'n':
-        print('''✩₊˚.⋆☾⋆⁺₊✧ Adeus!! (ᵔ ᗜ ᔔ) valeu pela jogatina!! ✩₊˚.⋆☾⋆⁺₊✧
-              ''')
+        print('''✩₊˚.⋆☾⋆⁺₊✧ Adeus!! (ᵔ ᗜ ᵔ) valeu pela jogatina!! ✩₊˚.⋆☾⋆⁺₊✧
+              ''') 
         print(
-            r'''
+        r'''
     |\__/,|   (`\
   _.|o o  |_   ) )
 -(((---(((-------- Gatinho de ASCII pra alegrar o dia :D
@@ -110,3 +110,6 @@ while True:
     else:
         print('''essa opção não existe! (ᵕ•᷄_•᷅ ) engraçadão
                ''')
+        break
+# um jogo bastante interessante 
+# chamado JoKenPô :O (JKP pro mais íntimos)
